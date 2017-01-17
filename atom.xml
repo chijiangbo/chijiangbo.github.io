@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-17T15:21:17.885Z</updated>
+  <updated>2017-01-17T15:35:52.611Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/01/17/caide/"/>
     <id>http://yoursite.com/2017/01/17/caide/</id>
     <published>2017-01-17T15:20:39.000Z</published>
-    <updated>2017-01-17T15:21:17.885Z</updated>
+    <updated>2017-01-17T15:35:52.611Z</updated>
     
     <content type="html"><![CDATA[<h1 id="wode"><a href="#wode" class="headerlink" title="wode"></a>wode</h1><h2 id="wode-1"><a href="#wode-1" class="headerlink" title="wode"></a>wode</h2>]]></content>
     
@@ -29,6 +29,8 @@
       &lt;h1 id=&quot;wode&quot;&gt;&lt;a href=&quot;#wode&quot; class=&quot;headerlink&quot; title=&quot;wode&quot;&gt;&lt;/a&gt;wode&lt;/h1&gt;&lt;h2 id=&quot;wode-1&quot;&gt;&lt;a href=&quot;#wode-1&quot; class=&quot;headerlink&quot; title=&quot;wode&quot;
     
     </summary>
+    
+      <category term="books" scheme="http://yoursite.com/categories/books/"/>
     
     
       <category term="games" scheme="http://yoursite.com/tags/games/"/>
