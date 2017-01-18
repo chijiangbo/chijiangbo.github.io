@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-18T10:44:50.574Z</updated>
+  <updated>2017-01-18T10:46:20.570Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/01/18/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2017/01/18/用hexo搭建个人博客/</id>
     <published>2017-01-18T10:43:25.000Z</published>
-    <updated>2017-01-18T10:44:50.574Z</updated>
+    <updated>2017-01-18T10:46:20.570Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>本文有三部分：</p>
@@ -28,7 +28,8 @@
 <li>小想法</li>
 <li>正题</li>
 <li>踩过的坑</li>
-<li>参考资源</li>
+<li>参考资源<a id="more"></a>
+</li>
 </ul>
 </blockquote>
 <h1 id="一-小想法"><a href="#一-小想法" class="headerlink" title="一. 小想法"></a>一. 小想法</h1><blockquote>
@@ -292,10 +293,7 @@ hexo d
 &lt;li&gt;小想法&lt;/li&gt;
 &lt;li&gt;正题&lt;/li&gt;
 &lt;li&gt;踩过的坑&lt;/li&gt;
-&lt;li&gt;参考资源&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;一-小想法&quot;&gt;&lt;a href=&quot;#一-小想法&quot; cl
+&lt;li&gt;参考资源
     
     </summary>
     
