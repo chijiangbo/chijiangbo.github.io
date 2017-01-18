@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-18T11:05:31.104Z</updated>
+  <updated>2017-01-18T11:09:07.969Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/01/18/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2017/01/18/用hexo搭建个人博客/</id>
     <published>2017-01-18T10:43:25.000Z</published>
-    <updated>2017-01-18T11:05:31.104Z</updated>
+    <updated>2017-01-18T11:09:07.969Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>本文有三部分：</p>
@@ -28,7 +28,7 @@
 <li>小想法</li>
 <li>正题</li>
 <li>踩过的坑</li>
-<li>参考资源</li>
+<li>参考资源 </li>
 </ul>
 </blockquote>
 <p>&lt;!– more – &gt;</p>
@@ -293,11 +293,11 @@ hexo d
 &lt;li&gt;小想法&lt;/li&gt;
 &lt;li&gt;正题&lt;/li&gt;
 &lt;li&gt;踩过的坑&lt;/li&gt;
-&lt;li&gt;参考资源&lt;/li&gt;
+&lt;li&gt;参考资源 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&amp;lt;!– more – &amp;gt;&lt;/p&gt;
-&lt;h1 id=&quot;
+&lt;h1 id=
     
     </summary>
     
@@ -305,30 +305,6 @@ hexo d
     
     
       <category term="blog" scheme="http://yoursite.com/tags/blog/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>搞定了</title>
-    <link href="http://yoursite.com/2017/01/18/%E6%90%9E%E5%AE%9A%E4%BA%86/"/>
-    <id>http://yoursite.com/2017/01/18/搞定了/</id>
-    <published>2017-01-17T16:34:57.000Z</published>
-    <updated>2017-01-17T16:36:39.834Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="真累。。"><a href="#真累。。" class="headerlink" title="真累。。"></a>真累。。</h1><h3 id="睡觉。。"><a href="#睡觉。。" class="headerlink" title="睡觉。。"></a>睡觉。。</h3><pre><code>。。。
-。。。
-</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;真累。。&quot;&gt;&lt;a href=&quot;#真累。。&quot; class=&quot;headerlink&quot; title=&quot;真累。。&quot;&gt;&lt;/a&gt;真累。。&lt;/h1&gt;&lt;h3 id=&quot;睡觉。。&quot;&gt;&lt;a href=&quot;#睡觉。。&quot; class=&quot;headerlink&quot; title=&quot;睡觉。。&quot;&gt;&lt;/a
-    
-    </summary>
-    
-      <category term="books" scheme="http://yoursite.com/categories/books/"/>
-    
-    
-      <category term="games" scheme="http://yoursite.com/tags/games/"/>
     
   </entry>
   
