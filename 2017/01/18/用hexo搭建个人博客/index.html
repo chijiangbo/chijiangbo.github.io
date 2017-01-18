@@ -109,7 +109,7 @@
 <meta property="og:image" content="http://p1.bqimg.com/583802/d38c95bcbd45c7d6.jpg">
 <meta property="og:image" content="http://p1.bqimg.com/583802/ac7edc8cbfcf5a61.jpg">
 <meta property="og:image" content="http://p1.bpimg.com/583802/2981fb6634f94c79.jpg">
-<meta property="og:updated_time" content="2017-01-18T11:13:49.459Z">
+<meta property="og:updated_time" content="2017-01-18T11:18:20.528Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用hexo搭建个人博客">
 <meta name="twitter:description" content="本文有三部分：
@@ -408,7 +408,7 @@
 </ul>
 </blockquote>
 <a id="more"></a>
-<h1 id="一-小想法"><a href="#一-小想法" class="headerlink" title="一. 小想法"></a>一. 小想法</h1><blockquote>
+<h1 id="小想法"><a href="#小想法" class="headerlink" title="小想法"></a>小想法</h1><blockquote>
 <p>一开始，看到<a href="https://wanghan0.github.io/" target="_blank" rel="external">Higanbana</a>的博客的页面很简洁，风格很赞，出于好奇，也就动手搭建了属于自己的博客。</p>
 <p>在搭建过程中，踩得大坑小坑很多，作为一个技术小白，不停地查找解决问题。新浪博客，简书等，都可以很方便的写东西，我就在纳闷，为什么要搭建自己的博客？</p>
 <p>想了半天，终于有了理由。你想，搭建好以后，就差不多有了属于自己的一亩三分地，并且主题风格可以自己换，还没广告。。这样多好。也就这样支撑着自己不停地通过百度，问大佬等等解决各种问题，终于搞定了。</p>
@@ -416,7 +416,7 @@
 <p>先看首页:</p>
 <p><img src="http://i1.piimg.com/583802/5f5e6f2f47f48397.png" alt="home"></p>
 <hr>
-<h1 id="二-正题"><a href="#二-正题" class="headerlink" title="二. 正题"></a>二. 正题</h1><ul>
+<h1 id="正题"><a href="#正题" class="headerlink" title="正题"></a>正题</h1><ul>
 <li>准备工作</li>
 </ul>
 <blockquote>
@@ -442,7 +442,7 @@
 <li>细节处理</li>
 </ul>
 </blockquote>
-<h2 id="1-搭建环境准备-node-js和git"><a href="#1-搭建环境准备-node-js和git" class="headerlink" title="1.搭建环境准备(node.js和git)"></a>1.搭建环境准备(node.js和git)</h2><blockquote>
+<h2 id="搭建环境准备-node-js和git"><a href="#搭建环境准备-node-js和git" class="headerlink" title="搭建环境准备(node.js和git)"></a>搭建环境准备(node.js和git)</h2><blockquote>
 <p>大概可以分为以下三步:</p>
 <ul>
 <li>Node.js 的安装</li>
@@ -450,11 +450,11 @@
 <li>gitHub 账户的配置</li>
 </ul>
 </blockquote>
-<h4 id="Node-js-的安装"><a href="#Node-js-的安装" class="headerlink" title="Node.js 的安装"></a>Node.js 的安装</h4><blockquote>
+<h3 id="Node-js-的安装"><a href="#Node-js-的安装" class="headerlink" title="Node.js 的安装"></a>Node.js 的安装</h3><blockquote>
 <p>进入 <a href="https://nodejs.org/en/download/" target="_blank" rel="external">Node.js官网</a> ，根据你的windows版本下载。你的windows版本是64位的话，点击.msi格式 的64-bit下载，32位的同理。</p>
 <p>下载完成后，建议新建一个文件夹，把node.js和接下来的git全放进去。点击安装，一路next，全为默认值，不用管。</p>
 </blockquote>
-<h4 id="Git-的安装"><a href="#Git-的安装" class="headerlink" title="Git 的安装"></a>Git 的安装</h4><blockquote>
+<h3 id="Git-的安装"><a href="#Git-的安装" class="headerlink" title="Git 的安装"></a>Git 的安装</h3><blockquote>
 <p>进入 <a href="https://git-scm.com/" target="_blank" rel="external">Git官网</a> ，点到 <a href="https://git-scm.com/download/win" target="_blank" rel="external">下载页面</a> ，点击下载 Git-2.6.3-64-bit.exe</p>
 <p>下载完成后，进入Git的安装过程。为了接下来的命令输入方便，需要更改默认参数，憋慌，按照下面的页面的更改进行安装：</p>
 </blockquote>
@@ -470,7 +470,7 @@
 <li><em>注意：接下来所有命令的输入都在cmd页面</em></li>
 </ul>
 </blockquote>
-<h4 id="gitHub账户的配置"><a href="#gitHub账户的配置" class="headerlink" title="gitHub账户的配置"></a>gitHub账户的配置</h4><blockquote>
+<h3 id="gitHub账户的配置"><a href="#gitHub账户的配置" class="headerlink" title="gitHub账户的配置"></a>gitHub账户的配置</h3><blockquote>
 <p>首先注册一个github账户<br>进入 <a href="https://github.com/" target="_blank" rel="external">GitHub官网</a>，按照所指示流程注册。</p>
 <p>刚注册了一个giuhub账户，确认注册成功后，登陆，按照下面步骤操作：</p>
 <p>创建代码库</p>
@@ -478,7 +478,7 @@
 <p>新建代码库</p>
 <p>里面的repository name中，yourname是你的github的名称，填写后，其他的内容不需要更改，点创建，这样代码库就创建完成。<br><img src="http://p1.bqimg.com/583802/ac7edc8cbfcf5a61.jpg" alt="code2"></p>
 </blockquote>
-<h2 id="2-hexo安装和配置"><a href="#2-hexo安装和配置" class="headerlink" title="2.hexo安装和配置"></a>2.hexo安装和配置</h2><p>步骤：</p>
+<h2 id="hexo安装和配置"><a href="#hexo安装和配置" class="headerlink" title="hexo安装和配置"></a>hexo安装和配置</h2><p>步骤：</p>
 <blockquote>
 <ul>
 <li>hexo安装</li>
@@ -524,7 +524,7 @@ hexo s
 </blockquote>
 <p><img src="http://p1.bpimg.com/583802/2981fb6634f94c79.jpg" alt="ok1"></p>
 <hr>
-<h2 id="3-连接hexo与GitHub-page"><a href="#3-连接hexo与GitHub-page" class="headerlink" title="3.连接hexo与GitHub page"></a>3.连接hexo与GitHub page</h2><p>步骤：</p>
+<h2 id="连接hexo与GitHub-page"><a href="#连接hexo与GitHub-page" class="headerlink" title="连接hexo与GitHub page"></a>连接hexo与GitHub page</h2><p>步骤：</p>
 <blockquote>
 <ul>
 <li>配置git个人信息</li>
@@ -566,7 +566,7 @@ git config --global user.email &quot;youremail&quot;
 <p>(yourname的填写方法同上)</p>
 </blockquote>
 <hr>
-<h2 id="4-到换主题了"><a href="#4-到换主题了" class="headerlink" title="4.到换主题了"></a>4.到换主题了</h2><p>步骤：</p>
+<h2 id="到换主题了"><a href="#到换主题了" class="headerlink" title="到换主题了"></a>到换主题了</h2><p>步骤：</p>
 <blockquote>
 <ul>
 <li>下载主题</li>
@@ -604,7 +604,7 @@ hexo d
 <p>(yourname更改方法同上)</p>
 </blockquote>
 <hr>
-<h2 id="5-发表文章"><a href="#5-发表文章" class="headerlink" title="5.发表文章"></a>5.发表文章</h2><p>步骤：</p>
+<h2 id="发表文章"><a href="#发表文章" class="headerlink" title="发表文章"></a>发表文章</h2><p>步骤：</p>
 <blockquote>
 <ul>
 <li>新建md文件</li>
@@ -637,7 +637,7 @@ hexo d
 </code></pre><blockquote>
 <p>刷新你的博客页面，比如我的<a href="https://chijiangbo.github.io/" target="_blank" rel="external">http://chijiangbo.github.io</a>，就能看到文章。</p>
 </blockquote>
-<h1 id="三-踩过的坑"><a href="#三-踩过的坑" class="headerlink" title="三. 踩过的坑"></a>三. 踩过的坑</h1><blockquote>
+<h1 id="踩过的坑"><a href="#踩过的坑" class="headerlink" title="踩过的坑"></a>踩过的坑</h1><blockquote>
 <ol>
 <li><p>主题更改好之后，无法成功显示，纠结了半天，没解决问题，我只好默默地重新搭建一遍。。</p>
 </li>
@@ -650,7 +650,7 @@ hexo d
 </blockquote>
 <p>  就这样，困扰了一天的难题终于解决了。那感觉，比拿了五杀还赞。</p>
 </blockquote>
-<h1 id="四-参考资源"><a href="#四-参考资源" class="headerlink" title="四. 参考资源"></a>四. 参考资源</h1><ol>
+<h1 id="参考资源"><a href="#参考资源" class="headerlink" title="参考资源"></a>参考资源</h1><ol>
 <li><a href="https://wanghan0.github.io/" target="_blank" rel="external">Higanbana</a></li>
 <li><a href="https://xdlrt.github.io/page/6/" target="_blank" rel="external">自留地</a></li>
 <li><a href="http://blog.csdn.net/gdutxiaoxu/article/details/53576018" target="_blank" rel="external"> 手把手教你用Hexo+Github 搭建属于自己的博客</a></li>
@@ -823,7 +823,7 @@ hexo d
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一-小想法"><span class="nav-number">1.</span> <span class="nav-text">一. 小想法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二-正题"><span class="nav-number">2.</span> <span class="nav-text">二. 正题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-搭建环境准备-node-js和git"><span class="nav-number">2.1.</span> <span class="nav-text">1.搭建环境准备(node.js和git)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Node-js-的安装"><span class="nav-number">2.1.0.1.</span> <span class="nav-text">Node.js 的安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Git-的安装"><span class="nav-number">2.1.0.2.</span> <span class="nav-text">Git 的安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#gitHub账户的配置"><span class="nav-number">2.1.0.3.</span> <span class="nav-text">gitHub账户的配置</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-hexo安装和配置"><span class="nav-number">2.2.</span> <span class="nav-text">2.hexo安装和配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-连接hexo与GitHub-page"><span class="nav-number">2.3.</span> <span class="nav-text">3.连接hexo与GitHub page</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-到换主题了"><span class="nav-number">2.4.</span> <span class="nav-text">4.到换主题了</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-发表文章"><span class="nav-number">2.5.</span> <span class="nav-text">5.发表文章</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三-踩过的坑"><span class="nav-number">3.</span> <span class="nav-text">三. 踩过的坑</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四-参考资源"><span class="nav-number">4.</span> <span class="nav-text">四. 参考资源</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#小想法"><span class="nav-number">1.</span> <span class="nav-text">小想法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正题"><span class="nav-number">2.</span> <span class="nav-text">正题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建环境准备-node-js和git"><span class="nav-number">2.1.</span> <span class="nav-text">搭建环境准备(node.js和git)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js-的安装"><span class="nav-number">2.1.1.</span> <span class="nav-text">Node.js 的安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git-的安装"><span class="nav-number">2.1.2.</span> <span class="nav-text">Git 的安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gitHub账户的配置"><span class="nav-number">2.1.3.</span> <span class="nav-text">gitHub账户的配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo安装和配置"><span class="nav-number">2.2.</span> <span class="nav-text">hexo安装和配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#连接hexo与GitHub-page"><span class="nav-number">2.3.</span> <span class="nav-text">连接hexo与GitHub page</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#到换主题了"><span class="nav-number">2.4.</span> <span class="nav-text">到换主题了</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发表文章"><span class="nav-number">2.5.</span> <span class="nav-text">发表文章</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#踩过的坑"><span class="nav-number">3.</span> <span class="nav-text">踩过的坑</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资源"><span class="nav-number">4.</span> <span class="nav-text">参考资源</span></a></li></ol></div>
             
 
           </div>
