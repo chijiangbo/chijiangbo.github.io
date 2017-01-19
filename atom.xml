@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-18T11:18:20.528Z</updated>
+  <updated>2017-01-19T15:39:27.922Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,76 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2017/01/19/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5%E4%BB%BB%E5%8A%A1/"/>
+    <id>http://yoursite.com/2017/01/19/第一阶段任务/</id>
+    <published>2017-01-19T15:02:27.845Z</published>
+    <updated>2017-01-19T15:39:27.922Z</updated>
+    
+    <content type="html"><![CDATA[<ul>
+<li>2016 百度前端学院<h1 id="task-1"><a href="#task-1" class="headerlink" title="task_1"></a>task_1</h1></li>
+</ul>
+<ul>
+<li>如何将header中h1与ul布局到一行<blockquote>
+<p>给ul添加 margin-top ，且值为负值</p>
+</blockquote>
+</li>
+<li>如何将 ul 中的 li 改为横向排列<blockquote>
+<p>给li添加 float:left<br>text-indent<br>表示文本首行缩进，好比word中的首行缩进</p>
+<p>例如：希望一段文字第一行缩进2个汉字，这&gt;段文本字体大小为12px,<br>放到</p><p>此处是你的文本</p>定义如下<p></p>
+<p>p{text-indent:25px;}</p>
+</blockquote>
+</li>
+<li><p>box-shadow</p>
+<p>  box-shadow: 2px 3px 4px #ccc;<br>&gt;</p>
+<blockquote>
+<p>2px: 阴影向右偏移量</p>
+<p>3px: 阴影向下偏移量</p>
+<p>4px: 阴影的过度距离</p>
+<p>#ccc: 阴影的颜色</p>
+</blockquote>
+</li>
+<li><p>不要li的默认style</p>
+<p>  li{list-style:none}</p>
+</li>
+<li><p>图片设置居中</p>
+<p>  img {<br>  display: block;<br>  margin: auto;   }</p>
+</li>
+<li><p>table只显示一条边框</p>
+<p>  table,td {</p>
+<pre><code>border: 1px solid #ccc;
+**border-collapse:collapse;** /*两边框合为一条*/
+}
+</code></pre></li>
+<li><p>文本框向下延伸</p>
+  <div class="des"><br>          <label>个人描述：</label><br>                  <textarea name="MSN"><br>                  </textarea><br>  </div>
+
+<p>  .des label {</p>
+<pre><code>**float:left;**
+}
+</code></pre><p>  .des textarea{</p>
+<pre><code>width:500px;
+height:100px;
+**overflow:visible;**
+}
+</code></pre></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;2016 百度前端学院&lt;h1 id=&quot;task-1&quot;&gt;&lt;a href=&quot;#task-1&quot; class=&quot;headerlink&quot; title=&quot;task_1&quot;&gt;&lt;/a&gt;task_1&lt;/h1&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;如何将header中h1与ul布
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>用hexo搭建个人博客</title>
