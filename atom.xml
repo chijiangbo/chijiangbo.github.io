@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-03T14:29:59.780Z</updated>
+  <updated>2017-02-03T14:39:49.210Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>select的样式</title>
+    <link href="http://yoursite.com/2017/02/03/select%E7%9A%84%E6%A0%B7%E5%BC%8F/"/>
+    <id>http://yoursite.com/2017/02/03/select的样式/</id>
+    <published>2017-02-03T14:39:11.000Z</published>
+    <updated>2017-02-03T14:39:49.210Z</updated>
+    
+    <content type="html"><![CDATA[<p>设置下拉菜单的字体样式<br><a id="more"></a></p>
+<blockquote>
+<p>下拉菜单的字体样式只能设置在select中,设置在option中不起作用。</p>
+</blockquote>
+<pre><code>&lt;div class=&quot;table-1-l&quot;&gt;
+    &lt;span&gt;查询项&lt;/span&gt;
+        &lt;select name=&quot;&quot; id=&quot;&quot;&gt;
+            &lt;option value=&quot;第一项&quot;&gt;第一项&lt;/option&gt;
+            &lt;option value=&quot;第二项&quot;&gt;第二项&lt;/option&gt;
+            &lt;option value=&quot;第三项&quot;&gt;第三项&lt;/option&gt;
+        &lt;/select&gt;
+&lt;/div&gt;   
+
+.right-content .table-1-l select {
+    width: 70px;
+    height: 24px;
+    background-color: #fff;
+    border: 2px solid #eee;
+    /*下面的才有用*/
+    font-size: 12px;
+    font-family: 黑体;
+    color: #333; 
+    line-height: 24px;
+}
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;设置下拉菜单的字体样式&lt;br&gt;
+    
+    </summary>
+    
+      <category term="css" scheme="http://yoursite.com/categories/css/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>css伪类(Pseudo-classes)</title>
