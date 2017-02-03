@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-19T15:49:32.789Z</updated>
+  <updated>2017-02-03T14:17:41.429Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,57 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>div的width和height</title>
+    <link href="http://yoursite.com/2017/02/03/div%E7%9A%84width%E5%92%8Cheight/"/>
+    <id>http://yoursite.com/2017/02/03/div的width和height/</id>
+    <published>2017-02-03T14:14:50.000Z</published>
+    <updated>2017-02-03T14:17:41.429Z</updated>
+    
+    <content type="html"><![CDATA[<p>讨论margin，padding，border对div最终显示的width和height的影响。</p>
+<p>如设置了内容尺寸为：</p>
+<pre><code>.box {
+    width: 100px;
+    height: 100px;
+}
+</code></pre><p>当添加如下</p>
+<pre><code>.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    /*padding: 10px;*/
+    /*border: 2px solid;*/
+}
+</code></pre><p>此时。box的表现尺寸会发生变化，例如，margin：10px 后，box的表现尺寸会变为 width: 120px; height: 120px;</p>
+<p>为了让原来box的尺寸不变化，此时，应做如下修改</p>
+<pre><code>.box {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+</code></pre><p>如此，box最终显示的width和height都是100px。</p>
+<p>padding和border同理。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;讨论margin，padding，border对div最终显示的width和height的影响。&lt;/p&gt;
+&lt;p&gt;如设置了内容尺寸为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.box {
+    width: 100px;
+    height: 100px;
+}
+&lt;/code&gt;&lt;/
+    
+    </summary>
+    
+      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+    
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>第一阶段任务</title>
