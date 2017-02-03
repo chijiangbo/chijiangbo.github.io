@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-03T14:24:31.293Z</updated>
+  <updated>2017-02-03T14:29:59.780Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,199 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>css伪类(Pseudo-classes)</title>
+    <link href="http://yoursite.com/2017/02/03/css%E4%BC%AA%E7%B1%BB-Pseudo-classes/"/>
+    <id>http://yoursite.com/2017/02/03/css伪类-Pseudo-classes/</id>
+    <published>2017-02-03T14:28:43.000Z</published>
+    <updated>2017-02-03T14:29:59.780Z</updated>
+    
+    <content type="html"><![CDATA[<p>CSS 伪类用于向某些选择器添加特殊的效果<br><a id="more"></a></p>
+<ul>
+<li><p>语法</p>
+<p>  selector : pseudo-class {property: value}</p>
+</li>
+</ul>
+<p>CSS 类也可与伪类搭配使用。</p>
+<pre><code>selector.class : pseudo-class {property: value}
+</code></pre><ul>
+<li>分类</li>
+</ul>
+<p>按照css版本的定义，我们可以先对伪类做如下分类</p>
+<p>css1中：</p>
+<blockquote>
+<ul>
+<li>:active     向被激活的元素添加样式。</li>
+<li>:hover     当鼠标悬浮在元素上方时，向元素添加样式。</li>
+<li>:link     向未被访问的链接添加样式。</li>
+<li>:visited     向已被访问的链接添加样式。</li>
+</ul>
+</blockquote>
+<p>例如：</p>
+<pre><code>a:link {color: #FF0000}        /* 未访问的链接 */
+a:visited {color: #00FF00}    /* 已访问的链接 */
+a:hover {color: #FF00FF}    /* 鼠标移动到链接上 */
+a:active {color: #0000FF}    /* 选定的链接 */
+</code></pre><p>除此之外，伪类还可以和css类配合使用</p>
+<pre><code>a.red : visited {color: #FF0000}
+
+&lt;a class=&quot;red&quot; href=&quot;css_syntax.asp&quot;&gt;CSS Syntax&lt;/a&gt;
+</code></pre><p>假如上面的例子中的链接被访问过，那么它将显示为红色。</p>
+<p>css2中：</p>
+<blockquote>
+<ul>
+<li>:first-child     向元素的第一个子元素添加样式。</li>
+<li>:lang     向带有指定 lang 属性的元素添加样式。</li>
+<li>:focus     向拥有键盘输入焦点的元素添加样式。</li>
+</ul>
+</blockquote>
+<p>例如：</p>
+<pre><code>p:first-child {font-weight: bold;}
+li:first-child {text-transform:uppercase;}
+</code></pre><p>上面的例子说明，某个元素下，p作为第一个元素，它的font-weight: bold；某个元素下，li作为第一个元素，它的text-transform:uppercase;</p>
+<blockquote>
+<p>提示：最常见的错误是认为 p:first-child 之类的选择器会选择 p 元素的第一个子元素。</p>
+</blockquote>
+<p>p:first-child，意思是p作为某个元素下的第一个元素。</p>
+<pre><code>input:focus
+  {
+  color:yellow;
+  }
+</code></pre><p>表示获得焦点的输入字段的颜色为yellow.<br>也可以与css伪类搭配使用</p>
+<pre><code>a.red:visited {color: #FF0000;}
+
+&lt;a class=&quot;red&quot; href=&quot;css_syntax.asp&quot;&gt;CSS Syntax&lt;/a&gt;
+</code></pre><p>如果上面这个例子中的链接已被访问过，那么它会显示为红色。</p>
+<ul>
+<li>总结<br>到现在了解的伪类有7种，总结起来，伪类的作用就是给元素添加样式，让网页更生动。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;CSS 伪类用于向某些选择器添加特殊的效果&lt;br&gt;
+    
+    </summary>
+    
+      <category term="css" scheme="http://yoursite.com/categories/css/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>内层div的margin-top不起作用</title>
+    <link href="http://yoursite.com/2017/02/03/%E5%86%85%E5%B1%82div%E7%9A%84margin-top%E4%B8%8D%E8%B5%B7%E4%BD%9C%E7%94%A8/"/>
+    <id>http://yoursite.com/2017/02/03/内层div的margin-top不起作用/</id>
+    <published>2017-02-03T14:28:11.000Z</published>
+    <updated>2017-02-03T14:31:42.877Z</updated>
+    
+    <content type="html"><![CDATA[<p>做练习时，碰到下面的问题<br><a id="more"></a><br>代码如下：</p>
+<pre><code>&lt;div class=&quot;header&quot;&gt;
+        &lt;div class=&quot;header-logo&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+.header-logo {
+    margin-top: 20px;
+}
+</code></pre><p>给header-logo设置了margin-top: 20px,理想的情况应该是header的上边缘和header-logo的上边缘之间会间隔20px。在ie中正常，但ff中却不是这样。</p>
+<p>在ff中，header-logo的margin-top发现不起作用，最后呈现的是header和header-logo的上边缘紧贴，header的margin-top值是20px，</p>
+<p>查询资料，得到如下解释：</p>
+<blockquote>
+<p>当两个容器嵌套时,如果外层容器和内层容器之间没有别的元素,firefox会把内层元素的margin-top作用与父元素。</p>
+</blockquote>
+<p>也就是说因为子层是父层的第一个非空子元素，所以使用margin-top会发生这个错误。</p>
+<p>如果在header和header-logo中插入p:</p>
+<pre><code>&lt;div class=&quot;header&quot;&gt;
+        &lt;p&gt;世界&lt;/p&gt;
+        &lt;div class=&quot;header-logo&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+.header-logo {
+    margin-top: 20px;
+}
+</code></pre><p>这样的话，header-logo中的margin-top就会正常起作用。<br>那么，怎么在ff中解决最初的问题呢，即两个div想嵌套，子div的margin-top发挥出我们想要的作用？</p>
+<p>解决的办法有两个：</p>
+<p>1、使用浮动来解决，即将子层代码改为：</p>
+<pre><code>.header-logo {
+    margin-top: 20px;
+    float: left;
+}
+</code></pre><p>2、使用padding-top来解决，即：</p>
+<pre><code>.header {
+    padding-top: 20px;
+}
+</code></pre><p>参考</p>
+<p><a href="http://www.cnblogs.com/huangyong8585/archive/2013/05/21/3090779.html" target="_blank" rel="external">关于内层DIV设置margin-top不起作用的解决方案</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;做练习时，碰到下面的问题&lt;br&gt;
+    
+    </summary>
+    
+      <category term="css" scheme="http://yoursite.com/categories/css/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>用css敲出三角形</title>
+    <link href="http://yoursite.com/2017/02/03/%E7%94%A8css%E6%95%B2%E5%87%BA%E4%B8%89%E8%A7%92%E5%BD%A2/"/>
+    <id>http://yoursite.com/2017/02/03/用css敲出三角形/</id>
+    <published>2017-02-03T14:27:48.000Z</published>
+    <updated>2017-02-03T14:33:21.041Z</updated>
+    
+    <content type="html"><![CDATA[<p>例子如下：<br><a id="more"></a><br>    <div class="trangle"></div></p>
+<pre><code>.trangle{
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #aaa;
+    }
+</code></pre><p>设置width,height为0后，用border获得三角形。</p>
+<p>上述例子中。border-left，border-right的颜色都为透明，只有border-top的颜色可见，所以最终结果，三角形的样子是下拉型的。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;例子如下：&lt;br&gt;
+    
+    </summary>
+    
+      <category term="css" scheme="http://yoursite.com/categories/css/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>各浏览器指代</title>
+    <link href="http://yoursite.com/2017/02/03/%E5%90%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8C%87%E4%BB%A3/"/>
+    <id>http://yoursite.com/2017/02/03/各浏览器指代/</id>
+    <published>2017-02-03T14:27:06.000Z</published>
+    <updated>2017-02-03T14:34:43.878Z</updated>
+    
+    <content type="html"><![CDATA[<p>经常会看到如下代码<br><a id="more"></a><br>    -moz-box-sizing:border-box;<br>    -ms-box-sizing:border-box;<br>    -webkit-box-sizing:border-box; </p>
+<p>那么，在css3中前面的-moz 、-ms、-webkit所代表的意思是什么呢？</p>
+<ul>
+<li>-moz代表firefox浏览器私有属性</li>
+<li>-ms代表IE浏览器私有属性</li>
+<li>-webkit代表chrome、safari私有属性</li>
+<li>-o- 代表opera浏览器私有属性</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;经常会看到如下代码&lt;br&gt;
+    
+    </summary>
+    
+      <category term="css" scheme="http://yoursite.com/categories/css/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>去除select下拉菜单的按钮</title>
