@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-03T14:21:17.004Z</updated>
+  <updated>2017-02-03T14:24:31.293Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>去除select下拉菜单的按钮</title>
+    <link href="http://yoursite.com/2017/02/03/%E5%8E%BB%E9%99%A4select%E4%B8%8B%E6%8B%89%E8%8F%9C%E5%8D%95%E7%9A%84%E6%8C%89%E9%92%AE/"/>
+    <id>http://yoursite.com/2017/02/03/去除select下拉菜单的按钮/</id>
+    <published>2017-02-03T14:23:31.000Z</published>
+    <updated>2017-02-03T14:24:31.293Z</updated>
+    
+    <content type="html"><![CDATA[<p>去除select下拉菜单的按钮，要用到css3的appearance属性。<br><a id="more"></a></p>
+<ul>
+<li>浏览器支持</li>
+</ul>
+<p>所有主流浏览器都不支持 appearance 属性。</p>
+<p> Firefox 支持替代的 -moz-appearance 属性。</p>
+<p> Safari 和 Chrome 支持替代的 -webkit-appearance 属性。</p>
+<p>要去掉select默认的下拉丑按钮，应给select设置：</p>
+<pre><code>select{
+    ...
+    appearance:none; /*去除浏览器默认样式*/
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari 和 Chrome */
+}
+</code></pre><p>参考</p>
+<p><a href="http://www.w3school.com.cn/cssref/pr_appearance.asp" target="_blank" rel="external">CSS3 appearance 属性</a></p>
+<p><a href="http://blog.csdn.net/u012518659/article/details/49913999" target="_blank" rel="external"> CSS：关于“-webkit-appearance: none”样式使用问题 </a></p>
+<p><a href="http://www.w3cplus.com/css3/changing-appearance-of-element-with-css3.html" target="_blank" rel="external">使用CSS3的appearance属性改变元素的外观 </a></p>
+<p><a href="http://blog.csdn.net/ft6302244/article/details/44239565" target="_blank" rel="external"> 怎么去掉select边框和小三角,appearance用法 </a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;去除select下拉菜单的按钮，要用到css3的appearance属性。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="css" scheme="http://yoursite.com/categories/css/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>div的width和height</title>
