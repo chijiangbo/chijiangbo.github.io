@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-03T14:17:41.429Z</updated>
+  <updated>2017-02-03T14:21:17.004Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,10 +20,9 @@
     <link href="http://yoursite.com/2017/02/03/div%E7%9A%84width%E5%92%8Cheight/"/>
     <id>http://yoursite.com/2017/02/03/div的width和height/</id>
     <published>2017-02-03T14:14:50.000Z</published>
-    <updated>2017-02-03T14:17:41.429Z</updated>
+    <updated>2017-02-03T14:21:17.004Z</updated>
     
-    <content type="html"><![CDATA[<p>讨论margin，padding，border对div最终显示的width和height的影响。</p>
-<p>如设置了内容尺寸为：</p>
+    <content type="html"><![CDATA[<p>讨论margin，padding，border对div最终显示的width和height的影响。<br><a id="more"></a><br>如设置了内容尺寸为：</p>
 <pre><code>.box {
     width: 100px;
     height: 100px;
@@ -49,20 +48,12 @@
     
     <summary type="html">
     
-      &lt;p&gt;讨论margin，padding，border对div最终显示的width和height的影响。&lt;/p&gt;
-&lt;p&gt;如设置了内容尺寸为：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;.box {
-    width: 100px;
-    height: 100px;
-}
-&lt;/code&gt;&lt;/
+      &lt;p&gt;讨论margin，padding，border对div最终显示的width和height的影响。&lt;br&gt;
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="css" scheme="http://yoursite.com/categories/css/"/>
     
-    
-      <category term="css" scheme="http://yoursite.com/tags/css/"/>
     
   </entry>
   
