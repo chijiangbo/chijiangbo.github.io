@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-16T11:59:25.374Z</updated>
+  <updated>2017-02-16T12:04:27.780Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习网站</title>
+    <link href="http://yoursite.com/2017/02/16/%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/"/>
+    <id>http://yoursite.com/2017/02/16/学习网站/</id>
+    <published>2017-02-16T12:01:29.000Z</published>
+    <updated>2017-02-16T12:04:27.780Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="学习网站"><a href="#学习网站" class="headerlink" title="学习网站"></a>学习网站</h1><a id="more"></a>
+<p><a href="http://www.jianshu.com/p/f74c137c5108" target="_blank" rel="external">Web 开发者必上的 10 个网站</a></p>
+<p><a href="https://www.zhihu.com/question/46939006" target="_blank" rel="external">国内有什么好的前端学习网站推荐？</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;学习网站&quot;&gt;&lt;a href=&quot;#学习网站&quot; class=&quot;headerlink&quot; title=&quot;学习网站&quot;&gt;&lt;/a&gt;学习网站&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="学习网站" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Markdown语法</title>
