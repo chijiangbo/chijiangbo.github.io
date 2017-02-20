@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-20T15:05:31.015Z</updated>
+  <updated>2017-02-20T15:07:23.407Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="http://yoursite.com/2017/02/20/%E4%B8%89%E6%A0%8F%E5%BC%8F%E5%B8%83%E5%B1%80%E4%B8%ADfloat-right%E4%B8%8D%E8%B5%B7%E4%BD%9C%E7%94%A8/"/>
     <id>http://yoursite.com/2017/02/20/三栏式布局中float-right不起作用/</id>
     <published>2017-02-20T14:54:30.000Z</published>
-    <updated>2017-02-20T15:05:31.015Z</updated>
+    <updated>2017-02-20T15:07:23.407Z</updated>
     
     <content type="html"><![CDATA[<p>深层次理解float</p>
-<p>&lt;!–more&gt;</p>
+<a id="more"></a>
 <p>两边定宽，中间自适应的样子</p>
 <p>html</p>
 <pre><code>&lt;!DOCTYPE html&gt;
@@ -99,13 +99,6 @@ body{
     <summary type="html">
     
       &lt;p&gt;深层次理解float&lt;/p&gt;
-&lt;p&gt;&amp;lt;!–more&amp;gt;&lt;/p&gt;
-&lt;p&gt;两边定宽，中间自适应的样子&lt;/p&gt;
-&lt;p&gt;html&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-    &amp;lt;head&amp;gt;
-    
     
     </summary>
     
