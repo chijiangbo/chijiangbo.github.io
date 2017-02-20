@@ -86,16 +86,43 @@
 
 
 
-<meta name="description" content="CSS 伪类用于向某些选择器添加特殊的效果">
+<meta name="description" content="深层次理解float
+&amp;lt;!–more&amp;gt;
+两边定宽，中间自适应的样子
+html
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+        &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
+        &amp;lt;link typ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="css伪类(Pseudo-classes)">
-<meta property="og:url" content="http://yoursite.com/2017/02/03/css伪类-Pseudo-classes/index.html">
+<meta property="og:title" content="三栏式布局中float:right不起作用">
+<meta property="og:url" content="http://yoursite.com/2017/02/20/三栏式布局中float-right不起作用/index.html">
 <meta property="og:site_name" content="路上">
-<meta property="og:description" content="CSS 伪类用于向某些选择器添加特殊的效果">
-<meta property="og:updated_time" content="2017-02-03T14:29:59.780Z">
+<meta property="og:description" content="深层次理解float
+&amp;lt;!–more&amp;gt;
+两边定宽，中间自适应的样子
+html
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+        &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
+        &amp;lt;link typ">
+<meta property="og:updated_time" content="2017-02-20T15:05:31.015Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="css伪类(Pseudo-classes)">
-<meta name="twitter:description" content="CSS 伪类用于向某些选择器添加特殊的效果">
+<meta name="twitter:title" content="三栏式布局中float:right不起作用">
+<meta name="twitter:description" content="深层次理解float
+&amp;lt;!–more&amp;gt;
+两边定宽，中间自适应的样子
+html
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+        &amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
+        &amp;lt;link typ">
 
 
 
@@ -123,13 +150,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/02/03/css伪类-Pseudo-classes/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/02/20/三栏式布局中float-right不起作用/"/>
 
 
 
 
 
-  <title> css伪类(Pseudo-classes) | 路上 </title>
+  <title> 三栏式布局中float:right不起作用 | 路上 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -252,7 +279,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/03/css伪类-Pseudo-classes/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/20/三栏式布局中float-right不起作用/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="池江波">
@@ -276,7 +303,7 @@
             
             
               
-                css伪类(Pseudo-classes)
+                三栏式布局中float:right不起作用
               
             
           </h1>
@@ -291,8 +318,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-03T22:28:43+08:00">
-                2017-02-03
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-20T22:54:30+08:00">
+                2017-02-20
               </time>
             
 
@@ -332,8 +359,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/02/03/css伪类-Pseudo-classes/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/03/css伪类-Pseudo-classes/" itemprop="commentCount"></span>
+                <a href="/2017/02/20/三栏式布局中float-right不起作用/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/20/三栏式布局中float-right不起作用/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -343,7 +370,7 @@
 
           
           
-             <span id="/2017/02/03/css伪类-Pseudo-classes/" class="leancloud_visitors" data-flag-title="css伪类(Pseudo-classes)">
+             <span id="/2017/02/20/三栏式布局中float-right不起作用/" class="leancloud_visitors" data-flag-title="三栏式布局中float:right不起作用">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -375,65 +402,78 @@
       
 
       
-        <p>CSS 伪类用于向某些选择器添加特殊的效果<br><a id="more"></a></p>
-<ul>
-<li><p>语法</p>
-<p>  selector : pseudo-class {property: value}</p>
-</li>
-</ul>
-<p>CSS 类也可与伪类搭配使用。</p>
-<pre><code>selector.class : pseudo-class {property: value}
-</code></pre><ul>
-<li>分类</li>
-</ul>
-<p>按照css版本的定义，我们可以先对伪类做如下分类</p>
-<p>css1中：</p>
+        <p>深层次理解float</p>
+<p>&lt;!–more&gt;</p>
+<p>两边定宽，中间自适应的样子</p>
+<p>html</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;title&gt;&lt;/title&gt;
+        &lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;new_file.css&quot;/&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div id=&quot;wrap&quot;&gt;
+            &lt;div id=&quot;left&quot;&gt;
+                &lt;img src=&quot;10361578_222507517000_2.jpg&quot; /&gt;
+                &lt;p&gt;Poi$on&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;main&quot;&gt;
+                美国街头品牌 SSUR 人气支线 SSUR*PLUS 日前释出了春夏系列，以 “Mischief &amp; American Dream” 为主题，大玩恶搞风格和美式精神，将“I DON`T GIVE A F*CK”、“RICH OWNERS”、“自由国”、“美国鹰”等标语和图案印制于 Tee、背心、短裤之上，并大胆运用条纹、迷彩、拼接等设计元素，极具街头态度。据悉，所有新品将于近期上架 SSUR 上海门店和线上店铺，感兴趣的朋友不妨提前做好准备。
+            &lt;/div&gt;
+            &lt;div id=&quot;right&quot;&gt;
+                &lt;img src=&quot;10361578_222507517000_2.jpg&quot; /&gt;
+                &lt;img src=&quot;10361578_222507517000_2.jpg&quot; /&gt;
+                &lt;img src=&quot;10361578_222507517000_2.jpg&quot; /&gt;
+                &lt;img src=&quot;10361578_222507517000_2.jpg&quot; /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>css</p>
+<pre><code>*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    padding: 20px;
+}
+#wrap,#left,#right,#main{
+    border: 1px solid #999;
+    padding: 20px;
+}
+#wrap{
+    overflow: auto;
+    background: #eee;
+    min-width: 600px;
+    margin: 0 auto;
+}
+#left{
+    float: left;
+    width: 200px;
+    background: #fff;
+}
+#right{
+    float: right;
+    width: 120px;
+    background: #fff;
+}
+#main{
+    margin-left: 220px;
+    margin-right: 140px ;
+    background: #fff;
+}
+</code></pre><p>其中，#right的float：right不起作用，这是为什么呢？</p>
 <blockquote>
-<ul>
-<li>:active     向被激活的元素添加样式。</li>
-<li>:hover     当鼠标悬浮在元素上方时，向元素添加样式。</li>
-<li>:link     向未被访问的链接添加样式。</li>
-<li>:visited     向已被访问的链接添加样式。</li>
-</ul>
+<p>浏览器解析HTML文档是从上到下按顺序解析的，所以原来的代码right本来就是一个block，设置右浮动不会对它前面的main有影响。</p>
 </blockquote>
-<p>例如：</p>
-<pre><code>a:link {color: #FF0000}        /* 未访问的链接 */
-a:visited {color: #00FF00}    /* 已访问的链接 */
-a:hover {color: #FF00FF}    /* 鼠标移动到链接上 */
-a:active {color: #0000FF}    /* 选定的链接 */
-</code></pre><p>除此之外，伪类还可以和css类配合使用</p>
-<pre><code>a.red : visited {color: #FF0000}
-
-&lt;a class=&quot;red&quot; href=&quot;css_syntax.asp&quot;&gt;CSS Syntax&lt;/a&gt;
-</code></pre><p>假如上面的例子中的链接被访问过，那么它将显示为红色。</p>
-<p>css2中：</p>
+<p>解决方法</p>
 <blockquote>
-<ul>
-<li>:first-child     向元素的第一个子元素添加样式。</li>
-<li>:lang     向带有指定 lang 属性的元素添加样式。</li>
-<li>:focus     向拥有键盘输入焦点的元素添加样式。</li>
-</ul>
+<p>在html中，把main和right换个顺序就行了，这样#right的float:right会影响main的布局。</p>
 </blockquote>
-<p>例如：</p>
-<pre><code>p:first-child {font-weight: bold;}
-li:first-child {text-transform:uppercase;}
-</code></pre><p>上面的例子说明，某个元素下，p作为第一个元素，它的font-weight: bold；某个元素下，li作为第一个元素，它的text-transform:uppercase;</p>
-<blockquote>
-<p>提示：最常见的错误是认为 p:first-child 之类的选择器会选择 p 元素的第一个子元素。</p>
-</blockquote>
-<p>p:first-child，意思是p作为某个元素下的第一个元素。</p>
-<pre><code>input:focus
-  {
-  color:yellow;
-  }
-</code></pre><p>表示获得焦点的输入字段的颜色为yellow.<br>也可以与css伪类搭配使用</p>
-<pre><code>a.red:visited {color: #FF0000;}
-
-&lt;a class=&quot;red&quot; href=&quot;css_syntax.asp&quot;&gt;CSS Syntax&lt;/a&gt;
-</code></pre><p>如果上面这个例子中的链接已被访问过，那么它会显示为红色。</p>
-<ul>
-<li>总结<br>到现在了解的伪类有7种，总结起来，伪类的作用就是给元素添加样式，让网页更生动。</li>
-</ul>
+<p>其实发现跟三栏定宽布局原理一样，我们给前两列设置了float后，第三列就自动在后面，因为前两个float影响了第三列的布局。</p>
 
       
     </div>
@@ -460,8 +500,8 @@ li:first-child {text-transform:uppercase;}
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/03/内层div的margin-top不起作用/" rel="next" title="内层div的margin-top不起作用">
-                <i class="fa fa-chevron-left"></i> 内层div的margin-top不起作用
+              <a href="/2017/02/20/vertical-align属性/" rel="next" title="vertical-align属性">
+                <i class="fa fa-chevron-left"></i> vertical-align属性
               </a>
             
           </div>
@@ -469,10 +509,6 @@ li:first-child {text-transform:uppercase;}
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/02/03/select的样式/" rel="prev" title="select的样式">
-                select的样式 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -504,8 +540,8 @@ li:first-child {text-transform:uppercase;}
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/02/03/css伪类-Pseudo-classes/"
-           data-title="css伪类(Pseudo-classes)" data-url="http://yoursite.com/2017/02/03/css伪类-Pseudo-classes/">
+      <div class="ds-thread" data-thread-key="2017/02/20/三栏式布局中float-right不起作用/"
+           data-title="三栏式布局中float:right不起作用" data-url="http://yoursite.com/2017/02/20/三栏式布局中float-right不起作用/">
       </div>
     
   </div>

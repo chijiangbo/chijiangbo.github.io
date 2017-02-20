@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-20T14:22:13.942Z</updated>
+  <updated>2017-02-20T15:05:31.015Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,105 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>三栏式布局中float:right不起作用</title>
+    <link href="http://yoursite.com/2017/02/20/%E4%B8%89%E6%A0%8F%E5%BC%8F%E5%B8%83%E5%B1%80%E4%B8%ADfloat-right%E4%B8%8D%E8%B5%B7%E4%BD%9C%E7%94%A8/"/>
+    <id>http://yoursite.com/2017/02/20/三栏式布局中float-right不起作用/</id>
+    <published>2017-02-20T14:54:30.000Z</published>
+    <updated>2017-02-20T15:05:31.015Z</updated>
+    
+    <content type="html"><![CDATA[<p>深层次理解float</p>
+<p>&lt;!–more&gt;</p>
+<p>两边定宽，中间自适应的样子</p>
+<p>html</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;title&gt;&lt;/title&gt;
+        &lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;new_file.css&quot;/&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div id=&quot;wrap&quot;&gt;
+            &lt;div id=&quot;left&quot;&gt;
+                &lt;img src=&quot;10361578_222507517000_2.jpg&quot; /&gt;
+                &lt;p&gt;Poi$on&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;main&quot;&gt;
+                美国街头品牌 SSUR 人气支线 SSUR*PLUS 日前释出了春夏系列，以 “Mischief &amp; American Dream” 为主题，大玩恶搞风格和美式精神，将“I DON`T GIVE A F*CK”、“RICH OWNERS”、“自由国”、“美国鹰”等标语和图案印制于 Tee、背心、短裤之上，并大胆运用条纹、迷彩、拼接等设计元素，极具街头态度。据悉，所有新品将于近期上架 SSUR 上海门店和线上店铺，感兴趣的朋友不妨提前做好准备。
+            &lt;/div&gt;
+            &lt;div id=&quot;right&quot;&gt;
+                &lt;img src=&quot;10361578_222507517000_2.jpg&quot; /&gt;
+                &lt;img src=&quot;10361578_222507517000_2.jpg&quot; /&gt;
+                &lt;img src=&quot;10361578_222507517000_2.jpg&quot; /&gt;
+                &lt;img src=&quot;10361578_222507517000_2.jpg&quot; /&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>css</p>
+<pre><code>*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    padding: 20px;
+}
+#wrap,#left,#right,#main{
+    border: 1px solid #999;
+    padding: 20px;
+}
+#wrap{
+    overflow: auto;
+    background: #eee;
+    min-width: 600px;
+    margin: 0 auto;
+}
+#left{
+    float: left;
+    width: 200px;
+    background: #fff;
+}
+#right{
+    float: right;
+    width: 120px;
+    background: #fff;
+}
+#main{
+    margin-left: 220px;
+    margin-right: 140px ;
+    background: #fff;
+}
+</code></pre><p>其中，#right的float：right不起作用，这是为什么呢？</p>
+<blockquote>
+<p>浏览器解析HTML文档是从上到下按顺序解析的，所以原来的代码right本来就是一个block，设置右浮动不会对它前面的main有影响。</p>
+</blockquote>
+<p>解决方法</p>
+<blockquote>
+<p>在html中，把main和right换个顺序就行了，这样#right的float:right会影响main的布局。</p>
+</blockquote>
+<p>其实发现跟三栏定宽布局原理一样，我们给前两列设置了float后，第三列就自动在后面，因为前两个float影响了第三列的布局。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;深层次理解float&lt;/p&gt;
+&lt;p&gt;&amp;lt;!–more&amp;gt;&lt;/p&gt;
+&lt;p&gt;两边定宽，中间自适应的样子&lt;/p&gt;
+&lt;p&gt;html&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+    
+    
+    </summary>
+    
+      <category term="css" scheme="http://yoursite.com/categories/css/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>vertical-align属性</title>
