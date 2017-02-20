@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-16T12:04:27.780Z</updated>
+  <updated>2017-02-20T14:22:13.942Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,111 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vertical-align属性</title>
+    <link href="http://yoursite.com/2017/02/20/vertical-align%E5%B1%9E%E6%80%A7/"/>
+    <id>http://yoursite.com/2017/02/20/vertical-align属性/</id>
+    <published>2017-02-20T13:23:26.000Z</published>
+    <updated>2017-02-20T14:22:13.942Z</updated>
+    
+    <content type="html"><![CDATA[<p>经常对vertical-align这个属性的使用场合分不清，今天做个梳理，也方便以后回顾。</p>
+<a id="more"></a>
+<h1 id="浏览器支持"><a href="#浏览器支持" class="headerlink" title="浏览器支持"></a>浏览器支持</h1><p>所以浏览器都支持这个属性，只不过对于任何版本的ie来说，它不支持vertical-align的inherit值，意思就是它不会从父元素继承vertical-align属性的值，当然，这只是针对于ie来说。简单来说，ie相对于其他浏览器来说，它的vertical-align值少一个。</p>
+<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>表示的是<em>行内</em>元素的垂直对齐方式。</p>
+<blockquote>
+<p>千万要注意，这个属性只针对行内元素来说,比如input,img。对于块状元素不起作用的，比如p。所以父级元素下至少有两个行内元素，对齐时才会涉及到这个属性。</p>
+</blockquote>
+<p>但是，这块就有个特别的地方，tr和td可以拥有这个属性，对于它两，vertical-align是成立的</p>
+<blockquote>
+<p>这个时候不管td下的元素是行内元素还是块级元素，都支持vertical-align属性</p>
+</blockquote>
+<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>默认值是 baseline</p>
+<blockquote>
+<p>表示你如果没对元素设置vertical-align属性的话，它的默认对齐方式就是以基线为准对齐，这块要注意基线不是bottom，可以类比拼音四线，比如第三条线为baseline，第四条线是bottom。</p>
+</blockquote>
+<p>继承性 无</p>
+<blockquote>
+<p>即，如果设置了父级元素的vertical-align: top，这个只针对父级元素起作用，子元素没继承这个属性，即子元素的vertical-align不是top,子元素的对齐方式还是baseline。</p>
+</blockquote>
+<p>js语法</p>
+<pre><code>object.style.verticalAlign=&quot;bottom&quot;;
+</code></pre><blockquote>
+<p>注意大写以及没有连接符，是在style里面的</p>
+</blockquote>
+<h1 id="可能的值"><a href="#可能的值" class="headerlink" title="可能的值"></a>可能的值</h1><blockquote>
+<p>有的是以父元素的font-size做为参照，有的是以父元素下子元素的top,bottom做为参照</p>
+</blockquote>
+<ul>
+<li>baseline</li>
+<li>sub</li>
+<li>super</li>
+<li>top</li>
+</ul>
+<blockquote>
+<p>这是什么意思呢，它表示以行内最高的那个元素的顶部为准对齐</p>
+</blockquote>
+<pre><code>&lt;p&gt;
+&lt;span style=&quot;font-size:60px,line-height:60px&quot;&gt;这是一幅&lt;/span&gt;&lt;img class=&quot;top&quot; src=&quot;/i/eg_cute.gif&quot; /&gt;位于段落中的图像。
+&lt;/p&gt; 
+//只设置font-size的话，它的半间距是不等于零的，需要再设置一下行高
+</code></pre><p>那么图片就会和span元素的顶部对齐，因为默认是baseline对齐，所以呢span外的文字就会和span内的文字以基线对齐</p>
+<ul>
+<li>text-top</li>
+</ul>
+<blockquote>
+<p>意思是将该元素与父元素下的文字以顶部对齐，这下是由父元素的font-size决定的，下次再学习的话，改一下p元素的font-size就都明白了。</p>
+</blockquote>
+<pre><code>&lt;p&gt;
+&lt;span style=&quot;font-size:60px,line-height:60px&quot;&gt;这是一幅&lt;/span&gt;&lt;img class=&quot;top&quot; src=&quot;/i/eg_cute.gif&quot; /&gt;位于段落中的图像。
+&lt;/p&gt; 
+</code></pre><p>图片和“位于段落中的图像”的顶部对齐</p>
+<ul>
+<li>middle</li>
+</ul>
+<blockquote>
+<p>这个比较绕，它是将图片（该行内元素）的中部和父元素的font-size的中部对齐</p>
+</blockquote>
+<ul>
+<li>bottom</li>
+</ul>
+<blockquote>
+<p>同top</p>
+</blockquote>
+<ul>
+<li>text-bottom</li>
+</ul>
+<blockquote>
+<p>同text-top</p>
+</blockquote>
+<ul>
+<li>length</li>
+</ul>
+<blockquote>
+<p>像素值，以px计，可以为负值，会向下偏移某个值，以baseline为基准</p>
+</blockquote>
+<ul>
+<li>%</li>
+</ul>
+<p>基准为line-height </p>
+<ul>
+<li>inherit</li>
+</ul>
+<blockquote>
+<p>规定应该从父元素继承 vertical-align 属性的值。</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;经常对vertical-align这个属性的使用场合分不清，今天做个梳理，也方便以后回顾。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="css" scheme="http://yoursite.com/categories/css/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>学习网站</title>
