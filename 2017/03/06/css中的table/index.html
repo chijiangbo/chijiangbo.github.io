@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="web," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -86,16 +86,16 @@
 
 
 
-<meta name="description" content="2016 百度前端学院task_1">
+<meta name="description" content="table中对border cellspacing cellpadding的理解不透彻，做个笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一阶段任务">
-<meta property="og:url" content="http://yoursite.com/2017/01/19/第一阶段任务/index.html">
+<meta property="og:title" content="css中的table">
+<meta property="og:url" content="http://yoursite.com/2017/03/06/css中的table/index.html">
 <meta property="og:site_name" content="路上">
-<meta property="og:description" content="2016 百度前端学院task_1">
-<meta property="og:updated_time" content="2017-01-19T15:49:32.789Z">
+<meta property="og:description" content="table中对border cellspacing cellpadding的理解不透彻，做个笔记">
+<meta property="og:updated_time" content="2017-03-06T05:16:14.171Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第一阶段任务">
-<meta name="twitter:description" content="2016 百度前端学院task_1">
+<meta name="twitter:title" content="css中的table">
+<meta name="twitter:description" content="table中对border cellspacing cellpadding的理解不透彻，做个笔记">
 
 
 
@@ -123,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/01/19/第一阶段任务/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/06/css中的table/"/>
 
 
 
 
 
-  <title> 第一阶段任务 | 路上 </title>
+  <title> css中的table | 路上 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -252,7 +252,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/19/第一阶段任务/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/06/css中的table/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="池江波">
@@ -276,7 +276,7 @@
             
             
               
-                第一阶段任务
+                css中的table
               
             
           </h1>
@@ -291,8 +291,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-19T23:44:18+08:00">
-                2017-01-19
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-06T13:14:45+08:00">
+                2017-03-06
               </time>
             
 
@@ -314,8 +314,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/2016百度前端学院/" itemprop="url" rel="index">
-                    <span itemprop="name">2016百度前端学院</span>
+                  <a href="/categories/css/" itemprop="url" rel="index">
+                    <span itemprop="name">css</span>
                   </a>
                 </span>
 
@@ -332,8 +332,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/01/19/第一阶段任务/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/19/第一阶段任务/" itemprop="commentCount"></span>
+                <a href="/2017/03/06/css中的table/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/06/css中的table/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -343,7 +343,7 @@
 
           
           
-             <span id="/2017/01/19/第一阶段任务/" class="leancloud_visitors" data-flag-title="第一阶段任务">
+             <span id="/2017/03/06/css中的table/" class="leancloud_visitors" data-flag-title="css中的table">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -375,56 +375,101 @@
       
 
       
-        <ul>
-<li>2016 百度前端学院<h1 id="task-1"><a href="#task-1" class="headerlink" title="task_1"></a>task_1</h1><a id="more"></a></li>
-</ul>
+        <p>table中对border cellspacing cellpadding的理解不透彻，做个笔记</p>
+<a id="more"></a>
+<h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><p><a href="http://www.w3school.com.cn/tags/tag_table.asp" target="_blank" rel="external">HTML <table> 标签</table></a></p>
+<h1 id="误区"><a href="#误区" class="headerlink" title="误区"></a>误区</h1><h2 id="border"><a href="#border" class="headerlink" title="border"></a>border</h2><pre><code>&lt;table border=&quot;1&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Month&lt;/th&gt;
+    &lt;th&gt;Savings&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;January&lt;/td&gt;
+    &lt;td&gt;$100&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><p>这样的话，会给td和table都加上边框，那么衍生出以下问题</p>
+<h3 id="只给table加边框"><a href="#只给table加边框" class="headerlink" title="只给table加边框"></a>只给table加边框</h3><pre><code>&lt;table border=&quot;0&quot; style=&quot;border:1px solid #000;&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Month&lt;/th&gt;
+    &lt;th&gt;Savings&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;January&lt;/td&gt;
+    &lt;td&gt;$100&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><h3 id="只给tr加边框"><a href="#只给tr加边框" class="headerlink" title="只给tr加边框"></a>只给tr加边框</h3><pre><code>tr{
+border: 1px solid #f5f6f8; 
+} 
+</code></pre><p>这样是不正确的。</p>
+<p>边框不折叠的表格 行,列,行组和列组是不具有border的。</p>
+<p>这样是没有任何效果的。因为表格中的tr并非单一的边框，这样便需要属性border-collapse</p>
+<p>border-collapse 属性设置表格的边框是否被合并为一个单一的边框，还是象在标准的 HTML 中那样分开显示。</p>
+<p>要给table中加入它</p>
+<pre><code>table{
+border-collapse:collapse;
+}
+</code></pre><p>即：</p>
+<pre><code>&lt;table style=&quot;border-collapse:collapse;&quot;&gt;
+  &lt;tr style=&quot;border: 1px solid #f5f6f8;&quot; &gt;
+    &lt;th&gt;Month&lt;/th&gt;
+    &lt;th&gt;Savings&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;January&lt;/td&gt;
+    &lt;td&gt;$100&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><p>border-collapse参数：</p>
 <ul>
-<li>如何将header中h1与ul布局到一行<blockquote>
-<p>给ul添加 margin-top ，且值为负值</p>
-</blockquote>
+<li><p>separate </p>
+<p>默认值。边框会被分开。不会忽略border-spacing 和 empty-cells 属性。</p>
 </li>
-<li>如何将 ul 中的 li 改为横向排列<blockquote>
-<p>给li添加 float:left<br>text-indent<br>表示文本首行缩进，好比word中的首行缩进</p>
-<p>例如：希望一段文字第一行缩进2个汉字，这&gt;段文本字体大小为12px,<br>放到</p><p>此处是你的文本</p>定义如下<p></p>
-<p>p{text-indent:25px;}</p>
-</blockquote>
+<li><p>collapse   </p>
 </li>
-<li><p>box-shadow</p>
-<p>  box-shadow: 2px 3px 4px #ccc;<br>&gt;</p>
-<blockquote>
-<p>2px: 阴影向右偏移量</p>
-<p>3px: 阴影向下偏移量</p>
-<p>4px: 阴影的过度距离</p>
-<p>#ccc: 阴影的颜色</p>
-</blockquote>
-</li>
-<li><p>不要li的默认style</p>
-<p>  li{list-style:none}</p>
-</li>
-<li><p>图片设置居中</p>
-<p>  img {<br>  display: block;<br>  margin: auto;   }</p>
-</li>
-<li><p>table只显示一条边框</p>
-<p>  table,td {</p>
-<pre><code>border: 1px solid #ccc;
-**border-collapse:collapse;** /*两边框合为一条*/
-}
-</code></pre></li>
-<li><p>文本框向下延伸</p>
-<blockquote>
-<div class="des"><br><label>个人描述：</label><br><textarea name="MSN"></textarea><br></div>
-
-</blockquote>
-<p>  .des label {</p>
-<pre><code>**float:left;**
-}
-</code></pre><p>  .des textarea{</p>
-<pre><code>width:500px;
-height:100px;
-**overflow:visible;**
-}
-</code></pre></li>
 </ul>
+<p>如果可能，边框会合并为一个单一的边框。会忽略 border-spacing 和 empty-cells 属性。</p>
+<ul>
+<li>inherit      </li>
+</ul>
+<p>规定应该从父元素继承border-collapse 属性的值。</p>
+<h3 id="只给th或td加边框"><a href="#只给th或td加边框" class="headerlink" title="只给th或td加边框"></a>只给th或td加边框</h3><pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th style=&quot;border:1px solid #000;&quot;&gt;Month&lt;/th&gt;
+    &lt;th style=&quot;border:1px solid #000;&quot;&gt;Savings&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;January&lt;/td&gt;
+    &lt;td&gt;$100&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><h2 id="cellspacing"><a href="#cellspacing" class="headerlink" title="cellspacing"></a>cellspacing</h2><pre><code>&lt;table border=&quot;8&quot; cellspacing=&quot;10&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Month&lt;/th&gt;
+    &lt;th&gt;Savings&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;January&lt;/td&gt;
+    &lt;td&gt;$100&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><blockquote>
+<p>会发现table的边框和td的边框之间的间距是10px</p>
+</blockquote>
+<h2 id="cellpadding"><a href="#cellpadding" class="headerlink" title="cellpadding"></a>cellpadding</h2><pre><code>&lt;table border=&quot;8&quot; cellspacing=&quot;10&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Month&lt;/th&gt;
+    &lt;th&gt;Savings&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;January&lt;/td&gt;
+    &lt;td&gt;$100&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><blockquote>
+<p>会发现td的边框和td的内容之间的间距是10px</p>
+</blockquote>
 
       
     </div>
@@ -446,19 +491,13 @@ height:100px;
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/web/" rel="tag"># web</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/18/用hexo搭建个人博客/" rel="next" title="用hexo搭建个人博客">
-                <i class="fa fa-chevron-left"></i> 用hexo搭建个人博客
+              <a href="/2017/03/06/css中postion机理/" rel="next" title="css中postion机理">
+                <i class="fa fa-chevron-left"></i> css中postion机理
               </a>
             
           </div>
@@ -466,10 +505,6 @@ height:100px;
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/02/03/div的width和height/" rel="prev" title="div的width和height">
-                div的width和height <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -501,8 +536,8 @@ height:100px;
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/01/19/第一阶段任务/"
-           data-title="第一阶段任务" data-url="http://yoursite.com/2017/01/19/第一阶段任务/">
+      <div class="ds-thread" data-thread-key="2017/03/06/css中的table/"
+           data-title="css中的table" data-url="http://yoursite.com/2017/03/06/css中的table/">
       </div>
     
   </div>
@@ -609,7 +644,7 @@ height:100px;
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#task-1"><span class="nav-number">1.</span> <span class="nav-text">task_1</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#基本概念"><span class="nav-number">1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#误区"><span class="nav-number">2.</span> <span class="nav-text">误区</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#border"><span class="nav-number">2.1.</span> <span class="nav-text">border</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#只给table加边框"><span class="nav-number">2.1.1.</span> <span class="nav-text">只给table加边框</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#只给tr加边框"><span class="nav-number">2.1.2.</span> <span class="nav-text">只给tr加边框</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#只给th或td加边框"><span class="nav-number">2.1.3.</span> <span class="nav-text">只给th或td加边框</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cellspacing"><span class="nav-number">2.2.</span> <span class="nav-text">cellspacing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cellpadding"><span class="nav-number">2.3.</span> <span class="nav-text">cellpadding</span></a></li></ol></li></ol></div>
             
 
           </div>

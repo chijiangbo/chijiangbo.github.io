@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="web," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -86,16 +86,18 @@
 
 
 
-<meta name="description" content="2016 百度前端学院task_1">
+<meta name="description" content="针对布局中经常用到的position做一个笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一阶段任务">
-<meta property="og:url" content="http://yoursite.com/2017/01/19/第一阶段任务/index.html">
+<meta property="og:title" content="css中postion机理">
+<meta property="og:url" content="http://yoursite.com/2017/03/06/css中postion机理/index.html">
 <meta property="og:site_name" content="路上">
-<meta property="og:description" content="2016 百度前端学院task_1">
-<meta property="og:updated_time" content="2017-01-19T15:49:32.789Z">
+<meta property="og:description" content="针对布局中经常用到的position做一个笔记">
+<meta property="og:image" content="http://p1.bpimg.com/583802/7e5f0fdce5053db0.png">
+<meta property="og:updated_time" content="2017-03-06T05:14:23.884Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第一阶段任务">
-<meta name="twitter:description" content="2016 百度前端学院task_1">
+<meta name="twitter:title" content="css中postion机理">
+<meta name="twitter:description" content="针对布局中经常用到的position做一个笔记">
+<meta name="twitter:image" content="http://p1.bpimg.com/583802/7e5f0fdce5053db0.png">
 
 
 
@@ -123,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/01/19/第一阶段任务/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/06/css中postion机理/"/>
 
 
 
 
 
-  <title> 第一阶段任务 | 路上 </title>
+  <title> css中postion机理 | 路上 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -252,7 +254,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/19/第一阶段任务/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/06/css中postion机理/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="池江波">
@@ -276,7 +278,7 @@
             
             
               
-                第一阶段任务
+                css中postion机理
               
             
           </h1>
@@ -291,8 +293,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-19T23:44:18+08:00">
-                2017-01-19
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-06T13:12:22+08:00">
+                2017-03-06
               </time>
             
 
@@ -314,8 +316,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/2016百度前端学院/" itemprop="url" rel="index">
-                    <span itemprop="name">2016百度前端学院</span>
+                  <a href="/categories/css/" itemprop="url" rel="index">
+                    <span itemprop="name">css</span>
                   </a>
                 </span>
 
@@ -332,8 +334,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/01/19/第一阶段任务/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/19/第一阶段任务/" itemprop="commentCount"></span>
+                <a href="/2017/03/06/css中postion机理/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/06/css中postion机理/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -343,7 +345,7 @@
 
           
           
-             <span id="/2017/01/19/第一阶段任务/" class="leancloud_visitors" data-flag-title="第一阶段任务">
+             <span id="/2017/03/06/css中postion机理/" class="leancloud_visitors" data-flag-title="css中postion机理">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -375,56 +377,46 @@
       
 
       
-        <ul>
-<li>2016 百度前端学院<h1 id="task-1"><a href="#task-1" class="headerlink" title="task_1"></a>task_1</h1><a id="more"></a></li>
-</ul>
+        <p>针对布局中经常用到的position做一个笔记</p>
+<a id="more"></a>
+<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>这个属性定义建立元素布局所用的定位机制。</p>
+<blockquote>
+<p>任何元素都可以定位，不过绝对或固定元素会生成一个块级框，而不论该元素本身是什么类型。相对定位元素会相对于它在正常流中的默认位置偏移。</p>
+</blockquote>
 <ul>
-<li>如何将header中h1与ul布局到一行<blockquote>
-<p>给ul添加 margin-top ，且值为负值</p>
-</blockquote>
+<li>默认值：     static</li>
+<li>继承性：     no</li>
+<li>版本：     CSS2</li>
+<li><p>JavaScript 语法： </p>
+<p>  object.style.position=”absolute”</p>
 </li>
-<li>如何将 ul 中的 li 改为横向排列<blockquote>
-<p>给li添加 float:left<br>text-indent<br>表示文本首行缩进，好比word中的首行缩进</p>
-<p>例如：希望一段文字第一行缩进2个汉字，这&gt;段文本字体大小为12px,<br>放到</p><p>此处是你的文本</p>定义如下<p></p>
-<p>p{text-indent:25px;}</p>
-</blockquote>
-</li>
-<li><p>box-shadow</p>
-<p>  box-shadow: 2px 3px 4px #ccc;<br>&gt;</p>
-<blockquote>
-<p>2px: 阴影向右偏移量</p>
-<p>3px: 阴影向下偏移量</p>
-<p>4px: 阴影的过度距离</p>
-<p>#ccc: 阴影的颜色</p>
-</blockquote>
-</li>
-<li><p>不要li的默认style</p>
-<p>  li{list-style:none}</p>
-</li>
-<li><p>图片设置居中</p>
-<p>  img {<br>  display: block;<br>  margin: auto;   }</p>
-</li>
-<li><p>table只显示一条边框</p>
-<p>  table,td {</p>
-<pre><code>border: 1px solid #ccc;
-**border-collapse:collapse;** /*两边框合为一条*/
-}
-</code></pre></li>
-<li><p>文本框向下延伸</p>
-<blockquote>
-<div class="des"><br><label>个人描述：</label><br><textarea name="MSN"></textarea><br></div>
-
-</blockquote>
-<p>  .des label {</p>
-<pre><code>**float:left;**
-}
-</code></pre><p>  .des textarea{</p>
-<pre><code>width:500px;
-height:100px;
-**overflow:visible;**
-}
-</code></pre></li>
 </ul>
+<h1 id="属性值"><a href="#属性值" class="headerlink" title="属性值"></a>属性值</h1><h2 id="static"><a href="#static" class="headerlink" title="static"></a>static</h2><p>默认值。</p>
+<p>没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。<br>inherit</p>
+<h2 id="fixed"><a href="#fixed" class="headerlink" title="fixed"></a>fixed</h2><blockquote>
+<p>生成绝对定位的元素，相对于浏览器窗口进行定位。</p>
+</blockquote>
+<p>元素的位置通过 “left”, “top”, “right” 以及 “bottom” 属性进行规定。</p>
+<h2 id="absolute"><a href="#absolute" class="headerlink" title="absolute"></a>absolute</h2><blockquote>
+<p>生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。</p>
+</blockquote>
+<p>元素的位置通过 “left”, “top”, “right” 以及 “bottom” 属性进行规定。</p>
+<h2 id="relative"><a href="#relative" class="headerlink" title="relative"></a>relative</h2><blockquote>
+<p>生成相对定位的元素，相对于其正常位置进行定位。</p>
+</blockquote>
+<p>因此，”left:20” 会向元素的 LEFT 位置添加 20 像素。</p>
+<h2 id="inherit"><a href="#inherit" class="headerlink" title="inherit"></a>inherit</h2><p>规定应该从父元素继承 position 属性的值。</p>
+<h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><p><img src="http://p1.bpimg.com/583802/7e5f0fdce5053db0.png" alt="Markdown"></p>
+<p>父元素在默认情况下是position: static;就是静态定位，</p>
+<p>这时候如果子元素使用position: absolute;</p>
+<p>那么子元素就会跳出父元素的范围，进入父元素的父元素范围，</p>
+<p>如果父元素的父元素依然是position: static;</p>
+<p>那么就会继续跳出这个范围，一直到遇到一个position: absolute;或者position: relative;的祖先元素，才会在这个祖先元素的范围内进行定位布局。</p>
+<blockquote>
+<p>如果子元素是position: absolute;，子元素的祖先元素都是position: static;即默认值。</p>
+<p>那么子元素就会不停往上跳出祖先元素的范围，直到body，然后在body内进行定位布局。</p>
+</blockquote>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://zhidao.baidu.com/question/1881998502829437508.html" target="_blank" rel="external">- CSS中position:absolute是针对body吗?</a></p>
 
       
     </div>
@@ -446,19 +438,13 @@ height:100px;
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/web/" rel="tag"># web</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/18/用hexo搭建个人博客/" rel="next" title="用hexo搭建个人博客">
-                <i class="fa fa-chevron-left"></i> 用hexo搭建个人博客
+              <a href="/2017/02/24/林徽因传/" rel="next" title="林徽因传">
+                <i class="fa fa-chevron-left"></i> 林徽因传
               </a>
             
           </div>
@@ -467,8 +453,8 @@ height:100px;
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/02/03/div的width和height/" rel="prev" title="div的width和height">
-                div的width和height <i class="fa fa-chevron-right"></i>
+              <a href="/2017/03/06/css中的table/" rel="prev" title="css中的table">
+                css中的table <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -501,8 +487,8 @@ height:100px;
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/01/19/第一阶段任务/"
-           data-title="第一阶段任务" data-url="http://yoursite.com/2017/01/19/第一阶段任务/">
+      <div class="ds-thread" data-thread-key="2017/03/06/css中postion机理/"
+           data-title="css中postion机理" data-url="http://yoursite.com/2017/03/06/css中postion机理/">
       </div>
     
   </div>
@@ -609,7 +595,7 @@ height:100px;
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#task-1"><span class="nav-number">1.</span> <span class="nav-text">task_1</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#说明"><span class="nav-number">1.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#属性值"><span class="nav-number">2.</span> <span class="nav-text">属性值</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#static"><span class="nav-number">2.1.</span> <span class="nav-text">static</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fixed"><span class="nav-number">2.2.</span> <span class="nav-text">fixed</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#absolute"><span class="nav-number">2.3.</span> <span class="nav-text">absolute</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#relative"><span class="nav-number">2.4.</span> <span class="nav-text">relative</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#inherit"><span class="nav-number">2.5.</span> <span class="nav-text">inherit</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实例"><span class="nav-number">3.</span> <span class="nav-text">实例</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>

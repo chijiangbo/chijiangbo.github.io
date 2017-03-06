@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-24T14:54:45.005Z</updated>
+  <updated>2017-03-06T05:16:14.171Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,181 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>css中的table</title>
+    <link href="http://yoursite.com/2017/03/06/css%E4%B8%AD%E7%9A%84table/"/>
+    <id>http://yoursite.com/2017/03/06/css中的table/</id>
+    <published>2017-03-06T05:14:45.000Z</published>
+    <updated>2017-03-06T05:16:14.171Z</updated>
+    
+    <content type="html"><![CDATA[<p>table中对border cellspacing cellpadding的理解不透彻，做个笔记</p>
+<a id="more"></a>
+<h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><p><a href="http://www.w3school.com.cn/tags/tag_table.asp" target="_blank" rel="external">HTML <table> 标签</table></a></p>
+<h1 id="误区"><a href="#误区" class="headerlink" title="误区"></a>误区</h1><h2 id="border"><a href="#border" class="headerlink" title="border"></a>border</h2><pre><code>&lt;table border=&quot;1&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Month&lt;/th&gt;
+    &lt;th&gt;Savings&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;January&lt;/td&gt;
+    &lt;td&gt;$100&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><p>这样的话，会给td和table都加上边框，那么衍生出以下问题</p>
+<h3 id="只给table加边框"><a href="#只给table加边框" class="headerlink" title="只给table加边框"></a>只给table加边框</h3><pre><code>&lt;table border=&quot;0&quot; style=&quot;border:1px solid #000;&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Month&lt;/th&gt;
+    &lt;th&gt;Savings&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;January&lt;/td&gt;
+    &lt;td&gt;$100&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><h3 id="只给tr加边框"><a href="#只给tr加边框" class="headerlink" title="只给tr加边框"></a>只给tr加边框</h3><pre><code>tr{
+border: 1px solid #f5f6f8; 
+} 
+</code></pre><p>这样是不正确的。</p>
+<p>边框不折叠的表格 行,列,行组和列组是不具有border的。</p>
+<p>这样是没有任何效果的。因为表格中的tr并非单一的边框，这样便需要属性border-collapse</p>
+<p>border-collapse 属性设置表格的边框是否被合并为一个单一的边框，还是象在标准的 HTML 中那样分开显示。</p>
+<p>要给table中加入它</p>
+<pre><code>table{
+border-collapse:collapse;
+}
+</code></pre><p>即：</p>
+<pre><code>&lt;table style=&quot;border-collapse:collapse;&quot;&gt;
+  &lt;tr style=&quot;border: 1px solid #f5f6f8;&quot; &gt;
+    &lt;th&gt;Month&lt;/th&gt;
+    &lt;th&gt;Savings&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;January&lt;/td&gt;
+    &lt;td&gt;$100&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><p>border-collapse参数：</p>
+<ul>
+<li><p>separate </p>
+<p>默认值。边框会被分开。不会忽略border-spacing 和 empty-cells 属性。</p>
+</li>
+<li><p>collapse   </p>
+</li>
+</ul>
+<p>如果可能，边框会合并为一个单一的边框。会忽略 border-spacing 和 empty-cells 属性。</p>
+<ul>
+<li>inherit      </li>
+</ul>
+<p>规定应该从父元素继承border-collapse 属性的值。</p>
+<h3 id="只给th或td加边框"><a href="#只给th或td加边框" class="headerlink" title="只给th或td加边框"></a>只给th或td加边框</h3><pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th style=&quot;border:1px solid #000;&quot;&gt;Month&lt;/th&gt;
+    &lt;th style=&quot;border:1px solid #000;&quot;&gt;Savings&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;January&lt;/td&gt;
+    &lt;td&gt;$100&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><h2 id="cellspacing"><a href="#cellspacing" class="headerlink" title="cellspacing"></a>cellspacing</h2><pre><code>&lt;table border=&quot;8&quot; cellspacing=&quot;10&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Month&lt;/th&gt;
+    &lt;th&gt;Savings&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;January&lt;/td&gt;
+    &lt;td&gt;$100&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><blockquote>
+<p>会发现table的边框和td的边框之间的间距是10px</p>
+</blockquote>
+<h2 id="cellpadding"><a href="#cellpadding" class="headerlink" title="cellpadding"></a>cellpadding</h2><pre><code>&lt;table border=&quot;8&quot; cellspacing=&quot;10&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Month&lt;/th&gt;
+    &lt;th&gt;Savings&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;January&lt;/td&gt;
+    &lt;td&gt;$100&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre><blockquote>
+<p>会发现td的边框和td的内容之间的间距是10px</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;table中对border cellspacing cellpadding的理解不透彻，做个笔记&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="css" scheme="http://yoursite.com/categories/css/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>css中postion机理</title>
+    <link href="http://yoursite.com/2017/03/06/css%E4%B8%ADpostion%E6%9C%BA%E7%90%86/"/>
+    <id>http://yoursite.com/2017/03/06/css中postion机理/</id>
+    <published>2017-03-06T05:12:22.000Z</published>
+    <updated>2017-03-06T05:14:23.884Z</updated>
+    
+    <content type="html"><![CDATA[<p>针对布局中经常用到的position做一个笔记</p>
+<a id="more"></a>
+<h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>这个属性定义建立元素布局所用的定位机制。</p>
+<blockquote>
+<p>任何元素都可以定位，不过绝对或固定元素会生成一个块级框，而不论该元素本身是什么类型。相对定位元素会相对于它在正常流中的默认位置偏移。</p>
+</blockquote>
+<ul>
+<li>默认值：     static</li>
+<li>继承性：     no</li>
+<li>版本：     CSS2</li>
+<li><p>JavaScript 语法： </p>
+<p>  object.style.position=”absolute”</p>
+</li>
+</ul>
+<h1 id="属性值"><a href="#属性值" class="headerlink" title="属性值"></a>属性值</h1><h2 id="static"><a href="#static" class="headerlink" title="static"></a>static</h2><p>默认值。</p>
+<p>没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。<br>inherit</p>
+<h2 id="fixed"><a href="#fixed" class="headerlink" title="fixed"></a>fixed</h2><blockquote>
+<p>生成绝对定位的元素，相对于浏览器窗口进行定位。</p>
+</blockquote>
+<p>元素的位置通过 “left”, “top”, “right” 以及 “bottom” 属性进行规定。</p>
+<h2 id="absolute"><a href="#absolute" class="headerlink" title="absolute"></a>absolute</h2><blockquote>
+<p>生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。</p>
+</blockquote>
+<p>元素的位置通过 “left”, “top”, “right” 以及 “bottom” 属性进行规定。</p>
+<h2 id="relative"><a href="#relative" class="headerlink" title="relative"></a>relative</h2><blockquote>
+<p>生成相对定位的元素，相对于其正常位置进行定位。</p>
+</blockquote>
+<p>因此，”left:20” 会向元素的 LEFT 位置添加 20 像素。</p>
+<h2 id="inherit"><a href="#inherit" class="headerlink" title="inherit"></a>inherit</h2><p>规定应该从父元素继承 position 属性的值。</p>
+<h1 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h1><p><img src="http://p1.bpimg.com/583802/7e5f0fdce5053db0.png" alt="Markdown"></p>
+<p>父元素在默认情况下是position: static;就是静态定位，</p>
+<p>这时候如果子元素使用position: absolute;</p>
+<p>那么子元素就会跳出父元素的范围，进入父元素的父元素范围，</p>
+<p>如果父元素的父元素依然是position: static;</p>
+<p>那么就会继续跳出这个范围，一直到遇到一个position: absolute;或者position: relative;的祖先元素，才会在这个祖先元素的范围内进行定位布局。</p>
+<blockquote>
+<p>如果子元素是position: absolute;，子元素的祖先元素都是position: static;即默认值。</p>
+<p>那么子元素就会不停往上跳出祖先元素的范围，直到body，然后在body内进行定位布局。</p>
+</blockquote>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://zhidao.baidu.com/question/1881998502829437508.html" target="_blank" rel="external">- CSS中position:absolute是针对body吗?</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;针对布局中经常用到的position做一个笔记&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="css" scheme="http://yoursite.com/categories/css/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>林徽因传</title>
